@@ -422,7 +422,7 @@ label .close_btn {
 .contact_text .contact_items {
     display: flex;
     gap: 20px;
-    margin: 80px 0;
+    margin: 80px 40px;
 }
 
 .contact_text .contact_items i {
@@ -433,7 +433,8 @@ label .close_btn {
 /* Footer Section */
 footer {
     /* background: #1b1b1b; */
-    background: blueviolet;
+    /* background: blueviolet; */
+    background-color: #f3961c;
     /* background: blue; */
     /* color: var(--white-color); */
     color: #333;
@@ -472,12 +473,18 @@ footer {
 
 .footer_section .useful_links ul li a {
     /* color: var(--white-color); */
-    color: #333;
-    font-size: 17px;
+    color: #000000;
+    font-size: 19px;
+    margin-right: 100px;
+}
+.footer_section .contact_us ul li span {
+    /* color: var(--white-color); */
+    color: #000000;
+    font-size: 30px;
 }
 
 .footer_section .useful_links ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer_section .contact_us ul li {
@@ -503,7 +510,8 @@ footer {
 }
 
 .footer_section .follow_us i:hover {
-    color: var(--secondary-color);
+    color: var(--white-color);
+    /* color: blue; */
 }
 
 
