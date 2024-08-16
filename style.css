@@ -67,7 +67,6 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    /* background: var(--primary-color); */
     background-color: #f3961c;
 }
 
@@ -141,7 +140,9 @@ label .close_btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: changeImage 3s ease-in 0s infinite normal;
+    animation-name: changeImage;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
     background-size: cover;
   }
   @keyframes changeImage {
@@ -180,8 +181,9 @@ label .close_btn {
   }
   
   .text_section p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 30px;
+    font-weight: 500;
   }
   
   .hero_section_button {
@@ -236,6 +238,14 @@ label .close_btn {
 .about_container .image_section img {
     width: 100%;
 }
+/* @media (max-width:860px){
+    .about_container .image_section {
+        width: 100%;
+    }
+    .about_container .image_section img {
+        width: 100%;
+    }
+} */
 
 /* Services Section */
 .services {
@@ -324,6 +334,10 @@ label .close_btn {
 .gallery {
     background: var(--white-color);
     padding: 60px 20px 100px;
+    /* padding: 20px 20px 100px; */
+}
+.gallery .section_title{
+    padding-top: 2rem;
 }
 
 .gallery .gallery_container {
@@ -700,7 +714,7 @@ footer {
 }
 
 /* Responsive Media Query code for max-width: 576px */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 861px) {
     .section_title {
         padding: 50px 0;
     }
@@ -734,10 +748,6 @@ footer {
         font-size: 17px;
     }
 
-    .about_container .image_section {
-        max-width: 70%;
-    }
-
     .button {
         padding: 10px 20px !important;
         font-size: 15px !important;
@@ -761,5 +771,13 @@ footer {
 
     .section_container .services_items img {
         max-width: 80%;
+    }
+}
+@media (max-width:860px){
+    .about_container .image_section {
+        max-width: 100%;
+    }
+    .about_container .image_section img {
+        width: 100%;
     }
 }
